@@ -266,6 +266,12 @@ body{padding-bottom:64px;}
 .info-row svg{width:22px;height:22px;color:var(--blue);flex-shrink:0;margin-top:2px;}
 .info-row strong{display:block;color:var(--navy-dark);}
 
-/* GBP project carousel */
-.project-carousel{position:relative;margin:48px 0 12px;background:#f7f8fa;border-radius:18px;padding:20px;overflow:hidden}
-.project-carousel h2{margin:0 0 6px}.project-carousel .carousel-note{margin:0 0 18px;color:#666}.carousel-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding-bottom:8px}.carousel-track figure{flex:0 0 min(78vw,360px);margin:0;scroll-snap-align:start}.carousel-track img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:#ddd}.carousel-track figcaption{font-size:.82rem;color:#555;padding:8px 2px 0}.carousel-controls{display:flex;gap:10px;position:absolute;right:20px;top:20px}.carousel-controls button{border:1px solid #bbb;background:#fff;border-radius:999px;width:38px;height:38px;font-size:1.2rem;cursor:pointer}.carousel-controls button:focus-visible{outline:3px solid #2455ff;outline-offset:2px}
+/* GBP project carousel — full-bleed continuously moving reel */
+.project-carousel{width:100vw;margin:56px calc(50% - 50vw) 0;padding:42px 0;background:#f5f6f8;overflow:hidden;border-radius:0}
+.carousel-heading{margin-bottom:22px}.carousel-heading h2{margin:5px 0 8px}.carousel-heading p{max-width:760px;margin:0;color:#666}
+.carousel-viewport{width:100%;overflow:hidden;cursor:grab;outline:none}.carousel-viewport:focus-visible{outline:3px solid #2455ff;outline-offset:-3px}
+.carousel-track{display:flex;gap:16px;width:max-content;will-change:transform;padding:0 0 10px 16px}
+.carousel-track figure{flex:0 0 clamp(250px,28vw,430px);margin:0}.carousel-track img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;background:#ddd;box-shadow:0 12px 28px rgba(0,0,0,.12)}
+.carousel-track figcaption{font-size:.82rem;color:#555;padding:9px 3px 0}
+@media(max-width:640px){.project-carousel{padding:34px 0}.carousel-track{gap:12px;padding-left:12px}.carousel-track figure{flex-basis:78vw}}
+@media(prefers-reduced-motion:reduce){.carousel-viewport{overflow-x:auto;scroll-snap-type:x mandatory}.carousel-track figure{scroll-snap-align:start}}
