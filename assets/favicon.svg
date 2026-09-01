@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="9" fill="#0000f7"/>
+  <g stroke="#28f7de" stroke-width="3" fill="none" stroke-linejoin="round">
+    <!-- House outline -->
+    <polygon points="24,8 16,18 16,32 32,32 32,18" />
+    <!-- Door -->
+    <rect x="20" y="24" width="8" height="8" rx="1" />
+  </g>
+</svg>
