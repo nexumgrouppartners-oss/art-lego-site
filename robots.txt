@@ -21,4 +21,4 @@ Allow: /
 
 User-agent: *
 Allow: /
-Sitemap: https://art-lego-site.vercel.app/sitemap.xml
+Sitemap: https://artlegoremodeling.com/sitemap.xml
