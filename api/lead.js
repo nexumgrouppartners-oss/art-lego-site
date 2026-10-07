@@ -72,7 +72,7 @@ module.exports = async function handler(req, res) {
       const r = await fetch(ghlUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(record)
+        body: JSON.stringify({ ...record, sms_consent: undefined })
       });
       if (r.ok) {
         delivered = true;
@@ -84,7 +84,8 @@ module.exports = async function handler(req, res) {
     }
   }
 
-  if (!delivered && supabaseUrl && supabaseKey) {
+  // Always mirror to site_leads: its insert trigger posts every lead to Slack #client-leads.
+  if (supabaseUrl && supabaseKey) {
     try {
       const r = await fetch(supabaseUrl.replace(/\/$/, '') + '/rest/v1/site_leads', {
         method: 'POST',
@@ -94,7 +95,7 @@ module.exports = async function handler(req, res) {
           'Authorization': 'Bearer ' + supabaseKey,
           'Prefer': 'return=minimal'
         },
-        body: JSON.stringify(record)
+        body: JSON.stringify({ ...record, sms_consent: undefined })
       });
       if (r.ok) {
         delivered = true;
@@ -129,29 +130,8 @@ module.exports = async function handler(req, res) {
     }
   }
 
-  // Global rule (locked by operator 2026-08-18): if a lead lands and the Blooio SMS
-  // did NOT fire, a loud Telegram alert goes to the Summit ops group so no lead is
-  // ever silently missed. Never blocks the lead.
-  const tgToken = process.env.TELEGRAM_BOT_TOKEN;
-  const tgChat = process.env.TELEGRAM_CHAT_ID;
-  if (delivered && !smsOk && tgToken && tgChat) {
-    try {
-      const alert = '\u{1F6A8}\u{1F6A8} WEBSITE LEAD — SMS NOTIFY FAILED \u{1F6A8}\u{1F6A8}\n' +
-        'Client: Art Lego LLC (art-lego-site.vercel.app)\n' +
-        'Name: ' + (record.name || 'n/a') + '\nPhone: ' + (record.phone || 'n/a') +
-        '\nEmail: ' + (record.email || 'n/a') + '\nNeed: ' + (record.need || 'n/a') +
-        '\nBlooio error: ' + (errors.join('; ') || 'skipped') +
-        '\nLead IS saved — notify the client manually NOW.';
-      const r = await fetch('https://api.telegram.org/bot' + tgToken + '/sendMessage', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: tgChat, text: alert })
-      });
-      if (!r.ok) { errors.push('telegram_alert_status_' + r.status); }
-    } catch (e) {
-      errors.push('telegram_alert_error_' + e.message);
-    }
-  }
+  // Missed-lead alert: every lead is mirrored to public.site_leads above; that table's insert
+  // trigger posts to Slack #client-leads, so no lead is silently missed (Telegram retired 2026-09-21).
 
   if (!delivered) {
     res.status(502).json({
