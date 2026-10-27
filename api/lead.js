@@ -130,6 +130,36 @@ module.exports = async function handler(req, res) {
     }
   }
 
+  // Owner EMAIL notify via Resend (added 2026-10-27; owner SMS is down while Blooio billing is blocked).
+  // NOTIFY_EMAIL may be comma-separated. Never blocks the lead. ZZ TEST leads are not emailed.
+  const _rk = process.env.RESEND_API_KEY;
+  const _to = String(process.env.NOTIFY_EMAIL || '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+  if (delivered && _rk && _to.length && !/^zz test/i.test(String(record.name || ''))) {
+    try {
+      const _e = function (s) { return String(s || 'n/a').replace(/[&<>]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]; }); };
+      const _html = '<p><strong>New website lead</strong> from ' + _e('Art Lego') + '</p><table cellpadding="4">' +
+        '<tr><td><b>Name</b></td><td>' + _e(record.name) + '</td></tr>' +
+        '<tr><td><b>Phone</b></td><td>' + _e(record.phone) + '</td></tr>' +
+        '<tr><td><b>Email</b></td><td>' + _e(record.email) + '</td></tr>' +
+        '<tr><td><b>Need</b></td><td>' + _e(record.need || record.program) + '</td></tr>' +
+        '<tr><td><b>Message</b></td><td>' + _e(record.message) + '</td></tr>' +
+        '<tr><td><b>Page</b></td><td>' + _e(record.page) + '</td></tr></table>';
+      const _m = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + _rk },
+        body: JSON.stringify({
+          from: 'Summit AI Solutions <leads@send.summitaiautomations.com>',
+          to: _to,
+          reply_to: (record.email && /@/.test(record.email)) ? record.email : undefined,
+          subject: 'New website lead: ' + (record.name || 'unknown'),
+          html: _html
+        })
+      });
+      if (!_m.ok) { errors.push('owner_email_status_' + _m.status); }
+    } catch (e) {
+      errors.push('owner_email_error_' + e.message);
+    }
+  }
   // Missed-lead alert: every lead is mirrored to public.site_leads above; that table's insert
   // trigger posts to Slack #client-leads, so no lead is silently missed (Telegram retired 2026-09-21).
 
