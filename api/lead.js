@@ -6,6 +6,26 @@
 // Fallback: Supabase `site_leads` table (SUPABASE_URL + SUPABASE_ANON_KEY).
 // If nothing is configured, returns a real, honest non-200 -- never fakes success.
 
+// Contact note: the lead's need + message + page go onto the GHL contact as a note, so the CRM
+// record (and the GHL owner-notify workflow) carries what the visitor asked for. Never blocks the lead.
+async function addGhlNote(ghlKey, contactId, record, errors) {
+  if (!contactId) { errors.push('ghl_note_skipped_no_contact_id'); return; }
+  const lines = [
+    'Website lead via ' + record.source,
+    'Need: ' + (record.need || record.program || 'n/a'),
+    'Message: ' + (record.message || 'n/a'),
+    'Page: ' + (record.page || 'n/a')
+  ];
+  try {
+    const r = await fetch('https://services.leadconnectorhq.com/contacts/' + encodeURIComponent(contactId) + '/notes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + ghlKey, 'Version': '2021-07-28' },
+      body: JSON.stringify({ body: lines.join('\n') })
+    });
+    if (!r.ok) { errors.push('ghl_note_status_' + r.status); }
+  } catch (e) { errors.push('ghl_note_error_' + e.message); }
+}
+
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ ok: false, error: 'method_not_allowed' });
@@ -59,6 +79,9 @@ module.exports = async function handler(req, res) {
       });
       if (r.ok) {
         delivered = true;
+        let j = null;
+        try { j = await r.json(); } catch (e) { j = null; }
+        await addGhlNote(ghlKey, j && j.contact && j.contact.id, record, errors);
       } else {
         errors.push('ghl_upsert_status_' + r.status);
       }
@@ -107,61 +130,10 @@ module.exports = async function handler(req, res) {
     }
   }
 
-  // Owner SMS notify via Blooio direct API (bypasses GHL's per-location provider,
-  // which is not wired in client subs -- same failure mode as GRV / Green Diamond).
-  // Never blocks the lead: fire-and-log regardless of outcome.
-  const blooioKey = process.env.BLOOIO_API_KEY;
-  const blooioTo = process.env.BLOOIO_NOTIFY_TO;
-  let smsOk = false;
-  const forceFail = req.headers['x-debug'] === 'summit' && payload.force_blooio_fail === true;
-  if (delivered && blooioKey && blooioTo && !forceFail) {
-    try {
-      const smsText = 'New website lead for Art Lego LLC! Name: ' + (record.name || 'n/a') +
-        ' Phone: ' + (record.phone || 'n/a') + ' Email: ' + (record.email || 'n/a') +
-        ' Need: ' + (record.need || 'n/a');
-      const r = await fetch('https://api.blooio.com/v2/api/chats/' + encodeURIComponent(blooioTo) + '/messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + blooioKey },
-        body: JSON.stringify({ text: smsText })
-      });
-      if (r.ok) { smsOk = true; } else { errors.push('blooio_notify_status_' + r.status); }
-    } catch (e) {
-      errors.push('blooio_notify_error_' + e.message);
-    }
-  }
+  // Owner notification is NOT sent from this handler. The 'website lead' tag set on the GHL contact above fires
+  // the client's GHL workflow (email + SMS via GHL's A2P number). Every lead is also mirrored to public.site_leads,
+  // whose insert trigger posts to Slack #client-leads.
 
-  // Owner EMAIL notify via Resend (added 2026-10-27; owner SMS is down while Blooio billing is blocked).
-  // NOTIFY_EMAIL may be comma-separated. Never blocks the lead. ZZ TEST leads are not emailed.
-  const _rk = process.env.RESEND_API_KEY;
-  const _to = String(process.env.NOTIFY_EMAIL || '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
-  if (delivered && _rk && _to.length && !/^zz test/i.test(String(record.name || ''))) {
-    try {
-      const _e = function (s) { return String(s || 'n/a').replace(/[&<>]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]; }); };
-      const _html = '<p><strong>New website lead</strong> from ' + _e('Art Lego') + '</p><table cellpadding="4">' +
-        '<tr><td><b>Name</b></td><td>' + _e(record.name) + '</td></tr>' +
-        '<tr><td><b>Phone</b></td><td>' + _e(record.phone) + '</td></tr>' +
-        '<tr><td><b>Email</b></td><td>' + _e(record.email) + '</td></tr>' +
-        '<tr><td><b>Need</b></td><td>' + _e(record.need || record.program) + '</td></tr>' +
-        '<tr><td><b>Message</b></td><td>' + _e(record.message) + '</td></tr>' +
-        '<tr><td><b>Page</b></td><td>' + _e(record.page) + '</td></tr></table>';
-      const _m = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + _rk },
-        body: JSON.stringify({
-          from: 'Summit AI Solutions <leads@send.summitaiautomations.com>',
-          to: _to,
-          reply_to: (record.email && /@/.test(record.email)) ? record.email : undefined,
-          subject: 'New website lead: ' + (record.name || 'unknown'),
-          html: _html
-        })
-      });
-      if (!_m.ok) { errors.push('owner_email_status_' + _m.status); }
-    } catch (e) {
-      errors.push('owner_email_error_' + e.message);
-    }
-  }
-  // Missed-lead alert: every lead is mirrored to public.site_leads above; that table's insert
-  // trigger posts to Slack #client-leads, so no lead is silently missed (Telegram retired 2026-09-21).
 
   if (!delivered) {
     res.status(502).json({
