@@ -57,10 +57,10 @@
   "image": "artlego/interior-painting-roller-hand.jpg",
   "image_alt": "Roller applying interior paint",
   "priority": 15,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/interior-painting-palm-beach-county-prep-steps",
+  "published_at": "2026-10-29T21:02:56.058Z",
   "last_error": null
  },
  {
