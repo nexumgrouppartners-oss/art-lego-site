@@ -25,10 +25,10 @@
   "image": "artlego/bathroom-remodel-modern-vanity.jpg",
   "image_alt": "Modern bathroom vanity",
   "priority": 12,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/bathroom-remodeling-wellington-fl-where-to-start",
+  "published_at": "2026-10-29T11:17:03.211Z",
   "last_error": null
  },
  {
