@@ -9,10 +9,10 @@
   "image": "artlego/kitchen-remodel-spacious-modern.jpg",
   "image_alt": "Open kitchen with modern finishes",
   "priority": 10,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/kitchen-remodeling-wellington-fl-what-to-expect",
+  "published_at": "2026-10-29T02:32:44.172Z",
   "last_error": null
  },
  {
