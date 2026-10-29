@@ -41,10 +41,10 @@
   "image": "artlego/exterior-painting-wall-ladder.jpg",
   "image_alt": "Exterior wall being painted from a ladder",
   "priority": 13,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/exterior-painting-wellington-fl-when-to-repaint",
+  "published_at": "2026-10-29T16:16:31.863Z",
   "last_error": null
  },
  {
