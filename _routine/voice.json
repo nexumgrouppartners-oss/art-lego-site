@@ -1,0 +1,44 @@
+{
+  "business": "Art Lego LLC",
+  "owner": "Camilo",
+  "phone": "561-574-3769",
+  "home_city": "Wellington, FL",
+  "cities": [
+    "Wellington",
+    "West Palm Beach",
+    "Palm Beach Gardens",
+    "Boynton Beach",
+    "North Palm Beach"
+  ],
+  "services": [
+    "general remodeling",
+    "kitchen remodeling",
+    "bathroom remodeling",
+    "interior remodeling",
+    "exterior remodeling",
+    "residential interior painting",
+    "residential exterior painting",
+    "commercial painting",
+    "cabinet and trim painting"
+  ],
+  "tone": "Plain, practical, local homeowner advice. Short sentences. Friendly expert, never salesy. Reading grade 8.",
+  "may_state": [
+    "Free estimates",
+    "Based in Wellington, FL; serves Palm Beach County, St. Lucie County and Martin County",
+    "Remodeling: general, kitchen, bathroom, interior and exterior",
+    "Painting: residential, commercial, interior, exterior, cabinet and trim",
+    "Project photos come from the Google Business Profile"
+  ],
+  "never_claim": [
+    "licensed/insured/certified unless given (the site shows a license number, but the quality gate blocks the word \"licensed\"; do not use it in posts)",
+    "years in business",
+    "number of jobs or customers",
+    "prices or dollar amounts",
+    "guarantees or warranties",
+    "statistics or survey numbers",
+    "named customers or quotes",
+    "awards"
+  ],
+  "site_url": "https://artlegoremodeling.com",
+  "title_suffix": " | Art Lego LLC"
+}
