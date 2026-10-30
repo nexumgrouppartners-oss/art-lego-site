@@ -89,10 +89,10 @@
   "image": "artlego/general-remodel-room-progress.jpg",
   "image_alt": "Room remodel in progress",
   "priority": 19,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/home-remodeling-west-palm-beach-fl-planning-guide",
+  "published_at": "2026-10-30T16:40:38.086Z",
   "last_error": null
  },
  {
