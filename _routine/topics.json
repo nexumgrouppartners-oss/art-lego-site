@@ -73,10 +73,10 @@
   "image": "artlego/exterior-house-colorful-row.jpg",
   "image_alt": "Row of painted buildings",
   "priority": 17,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/commercial-painting-palm-beach-county-what-to-plan",
+  "published_at": "2026-10-30T11:03:11.647Z",
   "last_error": null
  },
  {
