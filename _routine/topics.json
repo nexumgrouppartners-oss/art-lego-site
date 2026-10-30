@@ -105,10 +105,10 @@
   "image": "artlego/interior-painting-roller-white.jpg",
   "image_alt": "Interior wall painted white with a roller",
   "priority": 20,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/painting-contractor-palm-beach-gardens-fl-how-to-hire",
+  "published_at": "2026-10-30T21:03:13.644Z",
   "last_error": null
  },
  {
