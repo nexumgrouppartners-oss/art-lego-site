@@ -137,10 +137,10 @@
   "image": "artlego/bathroom-glass-shower-1.jpg",
   "image_alt": "Bathroom with a glass shower",
   "priority": 24,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/bathroom-remodel-north-palm-beach-fl-small-bath-ideas",
+  "published_at": "2026-10-31T16:04:00.930Z",
   "last_error": null
  },
  {
