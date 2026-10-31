@@ -153,10 +153,10 @@
   "image": "artlego/exterior-home-dusk-lit.jpg",
   "image_alt": "Home exterior at dusk",
   "priority": 26,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/exterior-painting-boynton-beach-fl-sun-salt-humidity",
+  "published_at": "2026-10-31T21:02:36.389Z",
   "last_error": null
  },
  {
