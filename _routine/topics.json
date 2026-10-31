@@ -121,10 +121,10 @@
   "image": "artlego/kitchen-remodel-finished-white.jpg",
   "image_alt": "Finished white kitchen",
   "priority": 22,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/kitchen-remodel-boynton-beach-fl-layout-choices",
+  "published_at": "2026-10-31T11:03:36.463Z",
   "last_error": null
  },
  {
