@@ -201,10 +201,10 @@
   "image": "artlego/exterior-painting-shutter.png",
   "image_alt": "Painted shutter on a home exterior",
   "priority": 31,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/signs-your-exterior-needs-repainting-south-florida",
+  "published_at": "2026-11-01T21:02:52.146Z",
   "last_error": null
  },
  {
