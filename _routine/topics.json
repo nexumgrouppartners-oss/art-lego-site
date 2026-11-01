@@ -185,10 +185,10 @@
   "image": "artlego/hero-twilight-modern-home.jpg",
   "image_alt": "Modern home at twilight",
   "priority": 29,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/exterior-remodeling-north-palm-beach-fl-curb-appeal",
+  "published_at": "2026-11-01T16:04:10.818Z",
   "last_error": null
  },
  {
