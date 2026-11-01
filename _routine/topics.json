@@ -169,10 +169,10 @@
   "image": "artlego/interior-modern-minimal.jpg",
   "image_alt": "Bright modern interior",
   "priority": 27,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/interior-remodeling-palm-beach-gardens-fl-open-floor-plans",
+  "published_at": "2026-11-01T11:02:46.684Z",
   "last_error": null
  },
  {
