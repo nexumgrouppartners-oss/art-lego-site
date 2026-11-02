@@ -217,10 +217,10 @@
   "image": "artlego/exterior-house-colorful-row.jpg",
   "image_alt": "Houses painted in different colors",
   "priority": 32,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/paint-colors-and-sheens-that-handle-florida-sun",
+  "published_at": "2026-11-02T11:03:17.047Z",
   "last_error": null
  },
  {
