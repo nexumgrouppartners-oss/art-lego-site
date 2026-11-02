@@ -233,10 +233,10 @@
   "image": "artlego/interior-painting-roller-hand.jpg",
   "image_alt": "Painter rolling paint on an interior wall",
   "priority": 34,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/diy-vs-pro-interior-painting-wellington-fl",
+  "published_at": "2026-11-02T17:09:59.862Z",
   "last_error": null
  },
  {
