@@ -281,10 +281,10 @@
   "image": "artlego/general-remodel-blueprint-worker.jpg",
   "image_alt": "Blueprint and worker planning a remodel",
   "priority": 39,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/do-you-need-a-permit-for-a-home-remodel-palm-beach-county",
+  "published_at": "2026-11-03T16:03:04.395Z",
   "last_error": null
  },
  {
