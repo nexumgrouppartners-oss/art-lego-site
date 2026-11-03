@@ -297,10 +297,10 @@
   "image": "artlego/kitchen-remodel-granite-wood.jpg",
   "image_alt": "Kitchen with granite countertops and wood cabinets",
   "priority": 41,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/kitchen-countertop-material-choices-south-florida",
+  "published_at": "2026-11-03T21:07:45.176Z",
   "last_error": null
  },
  {
