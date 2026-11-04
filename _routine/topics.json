@@ -345,10 +345,10 @@
   "image": "artlego/interior-luxury-dark-tones.jpg",
   "image_alt": "Interior with dark painted walls",
   "priority": 46,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/what-to-expect-during-a-whole-home-repaint",
+  "published_at": "2026-11-04T21:02:51.298Z",
   "last_error": null
  },
  {
