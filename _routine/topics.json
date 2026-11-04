@@ -313,10 +313,10 @@
   "image": "artlego/progress-shower-waterproofing.jpg",
   "image_alt": "Shower waterproofing in progress",
   "priority": 43,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/shower-waterproofing-basics-bathroom-remodel-florida",
+  "published_at": "2026-11-04T11:02:36.609Z",
   "last_error": null
  },
  {
