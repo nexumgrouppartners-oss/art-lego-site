@@ -361,10 +361,10 @@
   "image": "artlego/before-shower-waterproofing.jpg",
   "image_alt": "Bathroom during remodel before tile",
   "priority": 48,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/what-to-expect-during-a-bathroom-remodel-palm-beach-county",
+  "published_at": "2026-11-05T11:03:17.571Z",
   "last_error": null
  },
  {
