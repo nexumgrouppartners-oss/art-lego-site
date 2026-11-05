@@ -377,10 +377,10 @@
   "image": "artlego/kitchen-dark-cabinets.jpg",
   "image_alt": "Kitchen with dark painted cabinets",
   "priority": 50,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/cabinet-and-trim-painting-prep-palm-beach-county",
+  "published_at": "2026-11-05T16:02:40.001Z",
   "last_error": null
  },
  {
