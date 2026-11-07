@@ -393,10 +393,10 @@
   "image": "artlego/general-remodel-kitchen-progress.jpg",
   "image_alt": "Kitchen remodel in progress",
   "priority": 51,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/comparing-remodeling-estimates-wellington-fl",
+  "published_at": "2026-11-07T16:29:32.041Z",
   "last_error": null
  },
  {
