@@ -409,10 +409,10 @@
   "image": "artlego/interior-modern-minimal.jpg",
   "image_alt": "Painted modern interior room",
   "priority": 53,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/interior-paint-job-cost-factors-south-florida",
+  "published_at": "2026-11-07T21:02:33.879Z",
   "last_error": null
  },
  {
