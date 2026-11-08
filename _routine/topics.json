@@ -457,10 +457,10 @@
   "image": "artlego/interior-luxury-dark-tones.jpg",
   "image_alt": "Commercial interior with painted walls",
   "priority": 58,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/commercial-office-repaint-with-minimal-disruption",
+  "published_at": "2026-11-08T21:02:49.745Z",
   "last_error": null
  },
  {
