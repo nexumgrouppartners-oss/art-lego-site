@@ -425,10 +425,10 @@
   "image": "artlego/exterior-modern-pool-palms.jpg",
   "image_alt": "Modern home exterior with palms",
   "priority": 55,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/exterior-remodeling-cost-factors-palm-beach-county",
+  "published_at": "2026-11-08T11:02:25.073Z",
   "last_error": null
  },
  {
