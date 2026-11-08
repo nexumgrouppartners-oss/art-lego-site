@@ -441,10 +441,10 @@
   "image": "artlego/hero-home-renovation.jpg",
   "image_alt": "Home renovation in progress",
   "priority": 57,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/remodeling-while-living-at-home-south-florida",
+  "published_at": "2026-11-08T16:02:52.265Z",
   "last_error": null
  },
  {
