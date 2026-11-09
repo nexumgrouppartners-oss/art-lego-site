@@ -473,10 +473,10 @@
   "image": "artlego/exterior-modern-pool-palms.jpg",
   "image_alt": "Modern home with palm trees",
   "priority": 60,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/best-time-of-year-to-paint-a-home-in-palm-beach-county",
+  "published_at": "2026-11-09T11:02:44.340Z",
   "last_error": null
  },
  {
