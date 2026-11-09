@@ -3,8 +3,8 @@
 // draft.json = { "slug", "seo_title", "description", "crumb", "cta", "body_html", "faq":[{"q","a"}] }
 // RULES (the writer must follow these):
 //  seo_title 45-60 chars, ends with voice.title_suffix | description 125-155 | crumb <=40 | cta <=55
-//  body_html 850-1150 words, tags only <p><h2><ul><li><strong><a>; first <p> = 2-3 sentence direct answer
-//  exactly two links: topic.service_link and topic.related_link (tel: allowed); name >=1 city from voice.cities
+//  body_html words: topic.words range (+-10%) when set, else 850-1150; tags only <p><h2><ul><li><strong><a>; first <p> = 2-3 sentence direct answer
+//  links: topic.service_link + topic.related_link required; up to 2 more internal links that resolve to real pages (tel: allowed); name >=1 city from voice.cities
 //  no $ amounts, %, studies/stats, licensed/insured/certified/bonded, guarantee/warranty, tenure, awards, job counts
 //  faq 3-5 plain-text items; reading grade <= 9; last <p> invites a free estimate + phone
 import fs from 'node:fs';
