@@ -489,10 +489,10 @@
   "image": "interior-painting-roller-white.jpg",
   "image_alt": "Roller painting a white interior wall",
   "priority": 61,
-  "status": "pending",
-  "attempts": 0,
-  "live_url": null,
-  "published_at": null,
+  "status": "published",
+  "attempts": 1,
+  "live_url": "https://artlegoremodeling.com/blog/paint-sheen-choices-florida-walls",
+  "published_at": "2026-11-09T16:10:47.219Z",
   "last_error": null
  },
  {
