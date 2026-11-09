@@ -1,4 +1,5 @@
 // Quality gate. Usage: node _routine/gate.mjs draft.json
+// v2: shared checks in quality.mjs (answer-first, question H2s, client fact, uniqueness, AI tells, links, FAQ). Writer rules: _routine/COPYWRITER.md
 // draft.json = { "slug", "seo_title", "description", "crumb", "cta", "body_html", "faq":[{"q","a"}] }
 // RULES (the writer must follow these):
 //  seo_title 45-60 chars, ends with voice.title_suffix | description 125-155 | crumb <=40 | cta <=55
@@ -9,6 +10,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { quality, resolves } from './quality.mjs';
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(dir, '..');
 const voice = JSON.parse(fs.readFileSync(path.join(dir, 'voice.json'), 'utf8'));
@@ -26,13 +28,13 @@ if (!crumb || crumb.length > 45) errors.push('crumb missing or too long');
 if (!cta || cta.length > 60) errors.push('cta missing or too long');
 const text = body.replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
 const words = text ? text.split(' ').length : 0;
-if (words < 800 || words > 1400) errors.push('body word count ' + words + ' (need 850-1150)');
+if (!Array.isArray(t.words) && (words < 800 || words > 1400)) errors.push('body word count ' + words + ' (need 850-1150)');
 const badTag = (body.match(/<\/?([a-z0-9]+)/gi) || []).map(m => m.replace(/[<\/]/g, '').toLowerCase()).filter(tg => !['p','h2','h3','ul','ol','li','strong','em','a'].includes(tg));
 if (badTag.length) errors.push('disallowed tags: ' + [...new Set(badTag)].join(','));
 const hrefs = [...body.matchAll(/href="([^"]*)"/g)].map(m => m[1]);
 if (!hrefs.includes(t.service_link)) errors.push('missing link to ' + t.service_link);
 if (!hrefs.includes(t.related_link)) errors.push('missing link to ' + t.related_link);
-const extra = hrefs.filter(h => h !== t.service_link && h !== t.related_link && !/^tel:/.test(h));
+const extra = hrefs.filter(h => !resolves(root, h) && h !== t.service_link && h !== t.related_link && !/^tel:/.test(h));
 if (extra.length) errors.push('links not allowed: ' + extra.join(', '));
 if (!(voice.cities || []).some(c => text.includes(c))) errors.push('no service-area city named');
 if (voice.phone && !text.includes(voice.phone)) errors.push('phone ' + voice.phone + ' missing from body');
@@ -57,5 +59,6 @@ const syl = w => { w = w.toLowerCase().replace(/[^a-z]/g, ''); if (w.length <= 3
 const ws = text.split(' ').filter(Boolean);
 const grade = 0.39 * (ws.length / sentences) + 11.8 * (ws.reduce((a, w) => a + syl(w), 0) / Math.max(1, ws.length)) - 15.59;
 if (grade > 9.5) errors.push('reading grade ' + grade.toFixed(1) + ' (need <= 9; shorter sentences, plainer words)');
+errors.push(...quality({ p, t, voice, root, body, text, words }));
 if (errors.length) { console.error('FAIL\n- ' + errors.join('\n- ')); process.exit(1); }
 console.log('PASS ' + words + 'w grade ' + grade.toFixed(1));

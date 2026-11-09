@@ -509,7 +509,29 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
-  "last_error": null
+  "last_error": null,
+  "intent": "informational",
+  "format": "how-to",
+  "source": "site-gap",
+  "evidence": "painting.html lists kitchen cabinets, bathroom vanities, baseboards and trim work with durable finishes",
+  "client_fact": "Art Lego paints kitchen cabinets, bathroom vanities, baseboards and trim work with durable finishes.",
+  "fact_source": "painting.html: \"Kitchen cabinets, bathroom vanities, baseboards, and trim work with durable finishes.\"",
+  "must_include": [
+   "Kitchen cabinets, bathroom vanities"
+  ],
+  "outline": [
+   "Why do painted cabinets peel?",
+   "What gets cleaned and sanded first?",
+   "Why does priming matter on cabinet surfaces?",
+   "Which parts are painted: doors, frames, drawer fronts?",
+   "How do you know the finish is ready for use?"
+  ],
+  "answer_seed": "Cabinets peel when grease and shine are left on the surface, so clean, sand and prime before the finish coats.",
+  "words": [
+   800,
+   1100
+  ],
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
  },
  {
   "slug": "stucco-patch-before-exterior-paint",
@@ -525,7 +547,30 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
-  "last_error": null
+  "last_error": null,
+  "intent": "informational",
+  "format": "how-to",
+  "source": "site-gap",
+  "evidence": "painting.html: prep work (cleaning, patching, caulking and priming) takes real time; West Palm Beach page notes salt air is tough on exterior paint",
+  "client_fact": "Art Lego counts cleaning, patching, caulking and priming as real prep time in a painting estimate.",
+  "fact_source": "painting.html: \"Prep work: cleaning, patching, caulking and priming take real time\"",
+  "must_include": [
+   "cleaning, patching, caulking and priming"
+  ],
+  "outline": [
+   "Why patch stucco before painting?",
+   "What does patching and caulking involve?",
+   "Does salt air change the prep?",
+   "What is primer for on repaired spots?",
+   "What should the estimate say about prep?"
+  ],
+  "answer_seed": "Patch cracks and holes, caulk joints and prime repaired spots before the finish coats so the repair does not show through or fail early.",
+  "words": [
+   800,
+   1100
+  ],
+  "city_reason": "The West Palm Beach area page says homes closer to the water deal with salt in the air, which is tough on exterior paint, metal fixtures and hardware.",
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
  },
  {
   "slug": "bathroom-vanity-upgrade-options",
@@ -541,7 +586,30 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
-  "last_error": null
+  "last_error": null,
+  "intent": "commercial",
+  "format": "decision-guide",
+  "source": "site-gap",
+  "evidence": "areas/boynton-beach.html lists waterproofed showers, tile, frameless glass and new vanities",
+  "client_fact": "Art Lego lists new vanities alongside waterproofed showers, tile and frameless glass for Boynton Beach bathrooms.",
+  "fact_source": "areas/boynton-beach.html: \"Waterproofed showers, tile, frameless glass and new vanities.\"",
+  "must_include": [
+   "new vanities"
+  ],
+  "outline": [
+   "Is a new vanity the right upgrade?",
+   "Which vanity choices suit a humid bathroom?",
+   "What changes when the plumbing moves?",
+   "Does the vanity affect the paint and finish?",
+   "What should the walk-through cover?"
+  ],
+  "answer_seed": "Swap the vanity if the layout stays and the rest of the bathroom works; plan for more if the plumbing moves.",
+  "words": [
+   950,
+   1350
+  ],
+  "city_reason": "The Boynton Beach area page lists new vanities with waterproofed showers, tile and frameless glass, and says bathrooms are often the first room homeowners there want to fix.",
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
  },
  {
   "slug": "open-kitchen-wall-removal-questions",
@@ -557,7 +625,29 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
-  "last_error": null
+  "last_error": null,
+  "intent": "informational",
+  "format": "faq-roundup",
+  "source": "site-gap",
+  "evidence": "remodeling.html: layout changes, moving plumbing, electrical or walls, add labor",
+  "client_fact": "Art Lego says layout changes that move plumbing, electrical or walls add labor.",
+  "fact_source": "remodeling.html: \"Layout changes: moving plumbing, electrical or walls adds labor\"",
+  "must_include": [
+   "moving plumbing, electrical or walls"
+  ],
+  "outline": [
+   "What is in the wall you want to remove?",
+   "Does removing a wall move plumbing or electrical?",
+   "Do permits or association approvals apply?",
+   "What does the walk-through check?",
+   "What should the written scope say?"
+  ],
+  "answer_seed": "Before removing a kitchen wall, find out what runs through it and whether permits or association approvals apply, then get it in the written scope.",
+  "words": [
+   700,
+   950
+  ],
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
  },
  {
   "slug": "remodel-start-date-planning",
@@ -573,7 +663,29 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
-  "last_error": null
+  "last_error": null,
+  "intent": "informational",
+  "format": "decision-guide",
+  "source": "site-gap",
+  "evidence": "remodeling.html lists permits and association approvals as a factor in the estimate",
+  "client_fact": "Art Lego counts permits and association approvals as factors in a remodel estimate when the project requires them.",
+  "fact_source": "remodeling.html: \"Permits and association approvals when your project requires them\"",
+  "must_include": [
+   "Permits and association approvals"
+  ],
+  "outline": [
+   "What has to happen before a start date is set?",
+   "Do permits or association approvals come first?",
+   "How does the season affect the schedule?",
+   "What should you ask for in writing?",
+   "What if the date slips?"
+  ],
+  "answer_seed": "Pick a start date after permits and association approvals are sorted, not before, so the calendar is based on what the project needs.",
+  "words": [
+   950,
+   1350
+  ],
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
  },
  {
   "slug": "exterior-color-ideas-north-palm-beach",
@@ -589,7 +701,29 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
-  "last_error": null
+  "last_error": null,
+  "intent": "informational",
+  "format": "decision-guide",
+  "source": "site-gap",
+  "evidence": "painting.html: color consultation and association color approval timing",
+  "client_fact": "Art Lego offers free estimates and color consultation for painting jobs.",
+  "fact_source": "painting.html: \"Free estimates and color consultation\"",
+  "must_include": [
+   "Free estimates and color consultation"
+  ],
+  "outline": [
+   "How do you choose an exterior palette for Florida sun?",
+   "What does the association need to see?",
+   "Which finishes hold up outside?",
+   "Where does the color consultation fit?",
+   "How do you test a color?"
+  ],
+  "answer_seed": "Choose a palette that fits the neighborhood and the sun, test it on the wall, and check association rules before you commit.",
+  "words": [
+   950,
+   1350
+  ],
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
  },
  {
   "slug": "humid-room-ceiling-paint",
@@ -605,7 +739,29 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
-  "last_error": null
+  "last_error": null,
+  "intent": "informational",
+  "format": "how-to",
+  "source": "site-gap",
+  "evidence": "areas/boynton-beach.html: a standard flat finish in a bathroom can peel or mildew; products intended for damp rooms",
+  "client_fact": "Art Lego chooses products intended for damp rooms, because a standard flat bathroom finish can peel or mildew.",
+  "fact_source": "areas/boynton-beach.html: \"A standard flat finish in a bathroom can peel or mildew, so we choose products intended for damp rooms.\"",
+  "must_include": [
+   "products intended for damp rooms"
+  ],
+  "outline": [
+   "Why do ceilings in humid rooms fail first?",
+   "What causes stains and mildew overhead?",
+   "Which finish suits a damp ceiling?",
+   "What prep comes before the new coat?",
+   "When is the fan or leak the real problem?"
+  ],
+  "answer_seed": "Ceilings in damp rooms need a product made for them, plus a clean, dry surface, or the finish can peel or mildew.",
+  "words": [
+   800,
+   1100
+  ],
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
  },
  {
   "slug": "shower-waterproofing-questions-wellington",
@@ -621,7 +777,30 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
-  "last_error": null
+  "last_error": null,
+  "intent": "informational",
+  "format": "faq-roundup",
+  "source": "site-gap",
+  "evidence": "areas/wellington.html: Art Lego is based in Wellington and notes humidity hard on paint and bathrooms",
+  "client_fact": "Art Lego is based in Wellington and notes summer storms, humidity that is hard on paint and bathrooms.",
+  "fact_source": "areas/wellington.html: \"summer storms, humidity that is hard on paint and bathrooms, and a hurricane season\"",
+  "must_include": [
+   "humidity that is hard on paint and bathrooms"
+  ],
+  "outline": [
+   "Why does a Wellington bathroom need waterproofing?",
+   "What sits behind the tile?",
+   "What happens if the base is poor?",
+   "Does ventilation matter?",
+   "What should the walk-through cover?"
+  ],
+  "answer_seed": "A shower needs waterproofing behind the tile, because humidity and water will find any weak spot in a poor base.",
+  "words": [
+   700,
+   950
+  ],
+  "city_reason": "Art Lego is based in Wellington and its Wellington page notes summer storms and humidity that is hard on paint and bathrooms.",
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
  },
  {
   "slug": "countertop-template-expectations",
@@ -637,6 +816,882 @@
   "attempts": 0,
   "live_url": null,
   "published_at": null,
+  "last_error": null,
+  "intent": "informational",
+  "format": "process-walkthrough",
+  "source": "site-gap",
+  "evidence": "areas/palm-beach-gardens.html: kitchen remodeling is layout, cabinetry and surfaces planned around how you cook and entertain",
+  "client_fact": "Art Lego plans kitchen layout, cabinetry and surfaces around how the family cooks and entertains.",
+  "fact_source": "areas/palm-beach-gardens.html: \"Layout, cabinetry and surfaces planned around how you cook and entertain.\"",
+  "must_include": [
+   "cabinetry and surfaces planned around"
+  ],
+  "outline": [
+   "What is a countertop template?",
+   "What has to be in place before template day?",
+   "What does the template visit involve?",
+   "What happens between template and install?",
+   "What should you decide ahead of time?"
+  ],
+  "answer_seed": "Template day records exact measurements of the installed cabinets, so cabinets and layout must be final first.",
+  "words": [
+   950,
+   1350
+  ],
+  "city_reason": "The Palm Beach Gardens area page describes kitchen remodeling there as layout, cabinetry and surfaces planned around how you cook and entertain.",
+  "upgraded_at": "2026-11-09T16:36:03.827Z"
+ },
+ {
+  "slug": "paint-over-mildew-bathroom-florida",
+  "title": "Can You Paint Over Mildew in a Florida Bathroom?",
+  "target_query": "paint over mildew bathroom",
+  "angle": "Walks a homeowner through why mildew returns, what prep comes before paint, and why a bathroom needs a damp-room product rather than a standard flat finish.",
+  "service_link": "/painting",
+  "related_link": "/blog/interior-painting-florida-humidity-guide",
+  "image": "interior-painting-roller-white.jpg",
+  "image_alt": "Roller applying white paint to an interior wall (representative photo from the Art Lego LLC gallery)",
+  "priority": 71,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "informational",
+  "format": "how-to",
+  "source": "competitor-gap",
+  "evidence": "https://pbcpressurecleaning.com/painting-services/ and other Palm Beach County painter pages stress treating mildew before any coat; none explain the product choice for damp rooms",
+  "client_fact": "Art Lego chooses products intended for damp rooms, because a standard flat bathroom finish can peel or mildew.",
+  "fact_source": "areas/boynton-beach.html: \"A standard flat finish in a bathroom can peel or mildew, so we choose products intended for damp rooms.\"",
+  "must_include": [
+   "products intended for damp rooms"
+  ],
+  "outline": [
+   "Why does mildew keep coming back on bathroom walls?",
+   "What gets cleaned and dried before any paint goes on?",
+   "Why can a flat finish fail in a bathroom?",
+   "Does the bathroom fan matter as much as the paint?",
+   "When is it time to call a painter instead?"
+  ],
+  "answer_seed": "No: mildew has to be cleaned off and the surface dried first, and a bathroom needs a product made for damp rooms or the new coat can peel or mildew again.",
+  "words": [
+   800,
+   1100
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "exterior-paint-chalking-peeling-near-the-coast",
+  "title": "Why Does Exterior Paint Chalk and Peel Near the Coast?",
+  "target_query": "exterior paint chalking peeling florida coast",
+  "angle": "Explains the difference between chalking, peeling and failed caulk on coastal exteriors, and why prep (cleaning off salt and mildew, sealing joints) decides how the repaint holds up.",
+  "service_link": "/painting",
+  "related_link": "/areas/north-palm-beach",
+  "image": "exterior-home-dusk-lit.jpg",
+  "image_alt": "Florida home exterior at dusk (representative photo from the Art Lego LLC gallery)",
+  "priority": 81,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "informational",
+  "format": "explainer",
+  "source": "gsc",
+  "evidence": "\"south florida paint durability tips\" (1 imp, pos 67) and \"durable exterior paint south florida\" (3 imp, pos 88.7) land on the weather post with no page on why paint fails",
+  "client_fact": "Art Lego explains that near the water unprotected metal rusts faster, caulk and sealant break down sooner, and paint that was fine inland can chalk or peel.",
+  "fact_source": "areas/north-palm-beach.html: \"Unprotected metal rusts faster, caulk and sealant break down sooner, and paint that was fine inland can chalk or peel.\"",
+  "must_include": [
+   "paint that was fine inland can chalk or peel"
+  ],
+  "outline": [
+   "What does chalking look like on a painted wall?",
+   "Why does salt air shorten the life of a finish?",
+   "Which parts of the house fail first: metal, caulk or paint?",
+   "What does the repair prep involve?",
+   "How do you tell a surface problem from a sealant problem?"
+  ],
+  "answer_seed": "Salt in the air, strong sun and moisture break down coatings and sealant faster than inland, so chalk and peeling are signs the surface needs cleaning, repair and a coating suited to the exposure.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "get-your-home-ready-before-the-painters-arrive",
+  "title": "Checklist: Getting Your Home Ready Before the Painters Arrive",
+  "target_query": "prepare house before painters arrive",
+  "angle": "A practical homeowner checklist built around the factors Art Lego says drive a painting estimate: height, access and detail work like trim, ceilings and cabinets.",
+  "service_link": "/painting",
+  "related_link": "/contact",
+  "image": "interior-modern-minimal.jpg",
+  "image_alt": "Modern interior room with painted walls (representative photo from the Art Lego LLC gallery)",
+  "priority": 91,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "informational",
+  "format": "checklist",
+  "source": "site-gap",
+  "evidence": "painting.html prices around height, access and detail work, but no post tells the homeowner what to clear or decide beforehand",
+  "client_fact": "Art Lego prices interior and exterior jobs around height, access and detail work such as trim, ceilings and cabinets, so access to those areas matters.",
+  "fact_source": "painting.html: \"Height, access and detail work such as trim, ceilings and cabinets\"",
+  "must_include": [
+   "Height, access and detail work"
+  ],
+  "outline": [
+   "What should be moved away from the walls first?",
+   "How do you give the crew access to trim, ceilings and cabinets?",
+   "What should you decide before the walk-through?",
+   "What about pets, plants and outdoor furniture?",
+   "What happens on the first morning?"
+  ],
+  "answer_seed": "Clear a working path along every wall, ceiling and trim line, move furniture and fragile items out of reach, and settle colors and surfaces before the crew arrives.",
+  "words": [
+   700,
+   950
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "gated-community-remodel-gate-access-work-hours-vendor-forms",
+  "title": "Gated Community Remodel: Gate Access, Work Hours and Vendor Forms",
+  "target_query": "gated community contractor vendor requirements florida",
+  "angle": "A guide to the access, hours and paperwork side of remodeling or painting inside a gated or golf community, using the process Art Lego describes on its Palm Beach Gardens page.",
+  "service_link": "/remodeling",
+  "related_link": "/areas/palm-beach-gardens",
+  "image": "aerial-florida-homes-pools.jpg",
+  "image_alt": "Aerial view of Florida homes with pools (representative photo from the Art Lego LLC gallery)",
+  "priority": 101,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "informational",
+  "format": "local-guide",
+  "source": "paa",
+  "evidence": "Contractor-site scan: Palm Beach County remodel pages note HOA and gated-community review adds lead time before demolition; Art Lego Palm Beach Gardens page lists gate access, work hours and vendor paperwork",
+  "client_fact": "Art Lego coordinates around gate access, work hours and any vendor paperwork a community requires, and builds it into the plan.",
+  "fact_source": "areas/palm-beach-gardens.html: \"we also coordinate around gate access, work hours and any vendor paperwork the community requires\"",
+  "must_include": [
+   "any vendor paperwork the community requires"
+  ],
+  "outline": [
+   "What does a gated community usually ask of contractors?",
+   "Who handles gate access for the crew?",
+   "Which work hours are allowed?",
+   "What vendor paperwork should you ask the association about?",
+   "How does this change the project schedule?"
+  ],
+  "answer_seed": "Ask your management office for contractor rules, gate procedures, allowed work hours and vendor paperwork before the walk-through so the plan accounts for them from day one.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "condo-townhome-remodel-questions-for-the-building",
+  "title": "Remodeling a Condo or Townhome: Questions to Ask Your Building First",
+  "target_query": "condo remodel rules questions to ask association",
+  "angle": "A question roundup for condo and townhome owners, grounded in the rules Art Lego says it asks about at the first conversation.",
+  "service_link": "/remodeling",
+  "related_link": "/areas/west-palm-beach",
+  "image": "general-remodel-blueprint-worker.jpg",
+  "image_alt": "Worker reviewing remodel plans (representative photo from the Art Lego LLC gallery)",
+  "priority": 111,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "informational",
+  "format": "faq-roundup",
+  "source": "paa",
+  "evidence": "Contractor-site scan: condo and townhome remodel questions recur on Palm Beach County contractor pages; Art Lego West Palm Beach page says buildings set hours, approvals and paperwork before demolition",
+  "client_fact": "Art Lego asks condo and townhome owners about building rules at the very first conversation: allowed work, contractor hours and approvals before demolition.",
+  "fact_source": "areas/west-palm-beach.html: \"your building or association will usually have rules about what work is allowed, which hours contractors can work, and what approvals or paperwork are required before demolition starts\"",
+  "must_include": [
+   "what approvals or paperwork are required"
+  ],
+  "outline": [
+   "What work does your building allow at all?",
+   "Which hours can contractors work?",
+   "What approvals or paperwork come before demolition?",
+   "Does the building have rules for contractors?",
+   "What should be in your written scope?"
+  ],
+  "answer_seed": "Ask the building or association what work is allowed, which hours contractors may work and what approvals or paperwork are needed before demolition, then put the answers in the written scope.",
+  "words": [
+   700,
+   950
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "how-to-read-a-written-scope-of-work",
+  "title": "How to Read a Written Scope of Work Before You Say Yes",
+  "target_query": "how to read a remodeling scope of work",
+  "angle": "Teaches homeowners to read a scope line by line. Built on Art Lego giving a written scope that can be compared; no prices are discussed.",
+  "service_link": "/remodeling",
+  "related_link": "/blog/comparing-remodeling-estimates-wellington-fl",
+  "image": "general-remodel-kitchen-progress.jpg",
+  "image_alt": "Kitchen remodel in progress (representative photo from the Art Lego LLC gallery)",
+  "priority": 121,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "commercial",
+  "format": "decision-guide",
+  "source": "site-gap",
+  "evidence": "Art Lego aims to give a written scope you can compare; existing posts cover comparing estimates and cost factors but not reading the scope itself",
+  "client_fact": "Art Lego aims to give homeowners a written scope they can compare, so they know what is included before work begins.",
+  "fact_source": "areas/west-palm-beach.html: \"we aim to give you a written scope you can compare, so you know what is included before work begins\"",
+  "must_include": [
+   "a written scope you can compare"
+  ],
+  "outline": [
+   "What is a scope of work, in plain words?",
+   "Which lines tell you what is included?",
+   "What should be spelled out about materials and cleanup?",
+   "How do you compare two scopes fairly?",
+   "What questions belong in the walk-through?"
+  ],
+  "answer_seed": "A written scope lists what work is included, in what rooms and with what materials, so you can compare two bids line by line before you agree to anything.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "what-might-be-behind-your-walls-when-demolition-starts",
+  "title": "What Might Be Behind Your Walls When Demolition Starts?",
+  "target_query": "what is behind walls during remodel demolition",
+  "angle": "Explains why demolition can change a remodel and how a walk-through-based estimate handles unknowns, using the factor Art Lego names on its remodeling page.",
+  "service_link": "/remodeling",
+  "related_link": "/blog/kitchen-remodel-cost-factors-wellington",
+  "image": "progress-shower-waterproofing.jpg",
+  "image_alt": "Bathroom wall opened up during shower work (representative photo from the Art Lego LLC gallery)",
+  "priority": 131,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "informational",
+  "format": "explainer",
+  "source": "site-gap",
+  "evidence": "remodeling.html lists what is behind the walls once demolition begins as a pricing factor; no post explains it",
+  "client_fact": "Art Lego lists what is behind the walls once demolition begins as one of the main things that move a remodel estimate.",
+  "fact_source": "remodeling.html: \"What is behind the walls once demolition begins\"",
+  "must_include": [
+   "what is behind the walls"
+  ],
+  "outline": [
+   "Why cannot anyone see everything before demolition?",
+   "What do walls, floors and wet areas hide?",
+   "How does the free walk-through account for unknowns?",
+   "What happens when something unexpected turns up?",
+   "How can you plan for it without panic?"
+  ],
+  "answer_seed": "Nobody can see inside walls before demolition, which is why an estimate is based on the walk-through and why surprises behind the walls can change the scope.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "layout-change-mistakes-that-add-labor-mid-remodel",
+  "title": "Layout Changes in a Remodel: Mistakes That Add Labor Mid-Project",
+  "target_query": "remodel layout change mistakes plumbing electrical walls",
+  "angle": "Mistakes homeowners make by changing layout late, grounded in the factor Art Lego lists: moving plumbing, electrical or walls adds labor.",
+  "service_link": "/remodeling",
+  "related_link": "/areas/wellington",
+  "image": "kitchen-remodel-spacious-modern.jpg",
+  "image_alt": "Spacious modern kitchen (representative photo from the Art Lego LLC gallery)",
+  "priority": 141,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "informational",
+  "format": "mistakes",
+  "source": "site-gap",
+  "evidence": "remodeling.html: layout changes, moving plumbing, electrical or walls, add labor; no post covers deciding the layout early",
+  "client_fact": "Art Lego says layout changes that move plumbing, electrical or walls add labor, which is why layout is a first decision.",
+  "fact_source": "remodeling.html: \"Layout changes: moving plumbing, electrical or walls adds labor\"",
+  "must_include": [
+   "moving plumbing, electrical or walls"
+  ],
+  "outline": [
+   "Why does moving a wall or a pipe change the plan?",
+   "What is the mistake of deciding the layout late?",
+   "Can the room be redone in the same footprint?",
+   "What should the walk-through settle first?",
+   "How do you ask for both options in writing?"
+  ],
+  "answer_seed": "Settle the layout at the start, because moving plumbing, electrical or walls adds labor and a late change can reopen work already planned or done.",
+  "words": [
+   800,
+   1100
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "after-hurricane-season-exterior-walk-around",
+  "title": "After Hurricane Season: A Winter Walk-Around of Your Home Exterior",
+  "target_query": "exterior home check after hurricane season florida",
+  "angle": "A seasonal post for the end of hurricane season: what a homeowner can look at on the exterior and when to ask for an estimate. No insurance or storm-repair promises.",
+  "service_link": "/painting",
+  "related_link": "/blog/hurricane-season-exterior-prep-palm-beach-county",
+  "image": "exterior-house-colorful-row.jpg",
+  "image_alt": "Row of colorful house exteriors (representative photo from the Art Lego LLC gallery)",
+  "priority": 151,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "informational",
+  "format": "seasonal",
+  "source": "seasonal",
+  "evidence": "Nov-Feb in South Florida follows hurricane season; Art Lego has a what-to-check-outside page for storm prep (areas/north-palm-beach.html)",
+  "client_fact": "Art Lego already publishes what to check on the outside of your home before storms, and the same walk-around applies once the season ends.",
+  "fact_source": "areas/north-palm-beach.html: \"What to check on the outside of your home before storms.\"",
+  "must_include": [
+   "What to check on the outside of your home"
+  ],
+  "outline": [
+   "Why walk the exterior once the season ends?",
+   "What should you look at on walls, caulk and paint?",
+   "Which spots collect water or salt?",
+   "What can wait and what should be looked at soon?",
+   "How do you plan repairs around the weather and any association review?"
+  ],
+  "answer_seed": "Once hurricane season ends, walk the outside of the house for peeling paint, failed caulk and exposed surfaces and plan repairs during the drier months.",
+  "words": [
+   800,
+   1100
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "start-association-paperwork-now-for-a-spring-exterior-repaint",
+  "title": "Start Association Paperwork Now for a Spring Exterior Repaint",
+  "target_query": "association approval exterior repaint timeline",
+  "angle": "A winter-to-spring timeline post about getting association approval done first, without promising any review turnaround.",
+  "service_link": "/painting",
+  "related_link": "/blog/hoa-approval-exterior-paint-palm-beach-county",
+  "image": "aerial-florida-suburb.jpg",
+  "image_alt": "Aerial view of a Florida suburb (representative photo from the Art Lego LLC gallery)",
+  "priority": 161,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "informational",
+  "format": "seasonal",
+  "source": "seasonal",
+  "evidence": "Winter planning window before spring painting; Art Lego prices in association color approval timing for exterior repaints",
+  "client_fact": "Art Lego counts association color approval timing as one of the factors that shape an exterior repaint estimate.",
+  "fact_source": "painting.html: \"Association color approval timing for exterior repaints\"",
+  "must_include": [
+   "Association color approval timing"
+  ],
+  "outline": [
+   "Why start the approval before you book painters?",
+   "What does an association usually want to see?",
+   "Which colors and finishes need sign-off?",
+   "How long can the review take?",
+   "How does approval change the painting schedule?"
+  ],
+  "answer_seed": "Approval timing differs by association, so submit your color choices early and book painting after sign-off, not before.",
+  "words": [
+   800,
+   1100
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "planning-a-remodel-while-you-are-away-part-of-the-year",
+  "title": "Part-Year Residents: Planning a Remodel While You Are Away",
+  "target_query": "remodel while away part of year florida snowbird",
+  "angle": "A process walk-through for owners who split the year between homes: what to settle before leaving and what the final walkthrough confirms. No timeline promises.",
+  "service_link": "/remodeling",
+  "related_link": "/contact",
+  "image": "hero-home-renovation.jpg",
+  "image_alt": "Home renovation hero photo (representative photo from the Art Lego LLC gallery)",
+  "priority": 171,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "informational",
+  "format": "process-walkthrough",
+  "source": "seasonal",
+  "evidence": "Snowbird season Nov-Apr: many South Florida owners are away part of the year; Art Lego runs a free walk-through, written scope and final walkthrough",
+  "client_fact": "Art Lego ends projects with cleanup and a final walkthrough, which is the step part-year owners should plan around.",
+  "fact_source": "remodeling.html: \"Cleanup and final walkthrough\"",
+  "must_include": [
+   "Cleanup and final walkthrough"
+  ],
+  "outline": [
+   "What should happen at the walk-through before you leave?",
+   "How do you approve the scope from a distance?",
+   "Who has access to the home during the work?",
+   "How do you handle questions while you are away?",
+   "What does the final walkthrough confirm?"
+  ],
+  "answer_seed": "Do the walk-through and approve a written scope before you leave, agree who has access to the home, and schedule the final walkthrough for when you can attend or send someone you trust.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "planning-a-kitchen-remodel-around-holiday-hosting",
+  "title": "Planning a Kitchen Remodel Around Holiday Hosting",
+  "target_query": "kitchen remodel before holidays hosting timing",
+  "angle": "Helps homeowners decide how big a kitchen project to take on ahead of the holidays; no timeline is promised.",
+  "service_link": "/remodeling",
+  "related_link": "/blog/how-long-does-a-kitchen-remodel-take-south-florida",
+  "image": "kitchen-remodel-finished-white.jpg",
+  "image_alt": "Finished white kitchen (representative photo from the Art Lego LLC gallery)",
+  "priority": 181,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "commercial",
+  "format": "seasonal",
+  "source": "seasonal",
+  "evidence": "Nov-Dec holiday hosting is a common kitchen deadline; Art Lego describes kitchens as the room you use most",
+  "client_fact": "Art Lego describes kitchen updates as cabinets, counters and lighting for the room you use most.",
+  "fact_source": "areas/boynton-beach.html: \"Updated cabinets, counters and lighting for the room you use most.\"",
+  "must_include": [
+   "the room you use most"
+  ],
+  "outline": [
+   "Why does the holiday calendar change the plan?",
+   "What can you realistically finish before guests arrive?",
+   "Is a smaller update a better fit than a full remodel?",
+   "How do you plan meals while the kitchen is closed?",
+   "What should the schedule say in writing?"
+  ],
+  "answer_seed": "Pick the kitchen changes that matter before hosting season, agree the schedule in writing and treat any holiday deadline as a reason to start planning early, not a promise.",
+  "words": [
+   800,
+   1100
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "winter-planning-for-a-spring-remodel-decisions-to-make-first",
+  "title": "Winter Planning for a Spring Remodel: Decisions to Make First",
+  "target_query": "plan remodel in winter start spring florida",
+  "angle": "A winter planning sequence for a spring start, built on the free walk-through Art Lego begins every project with.",
+  "service_link": "/remodeling",
+  "related_link": "/blog/comparing-remodeling-estimates-wellington-fl",
+  "image": "general-remodel-room-progress.jpg",
+  "image_alt": "Room mid-renovation (representative photo from the Art Lego LLC gallery)",
+  "priority": 191,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "informational",
+  "format": "how-to",
+  "source": "seasonal",
+  "evidence": "Nov-Feb is the planning window before spring starts; Art Lego begins each project with a free walk-through",
+  "client_fact": "Art Lego starts every remodel with a free walk-through, and the estimate reflects what it actually sees.",
+  "fact_source": "remodeling.html: \"Every project starts with a free walk-through, and the estimate reflects what we actually see.\"",
+  "must_include": [
+   "Every project starts with a free walk-through"
+  ],
+  "outline": [
+   "Why use the winter months to plan?",
+   "Which decisions come before the walk-through?",
+   "What should you ask the contractor to put in writing?",
+   "Do permits or association review come first?",
+   "How do you compare the estimates once you have them?"
+  ],
+  "answer_seed": "Use the slower winter months to settle scope, layout and materials, book the free walk-through and check permit or association needs before a spring start.",
+  "words": [
+   800,
+   1100
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "why-trim-painting-takes-longer-than-it-looks",
+  "title": "Why Trim and Baseboard Painting Takes Longer Than It Looks",
+  "target_query": "why does trim painting take so long baseboards doors",
+  "angle": "Explains why trim, doors and baseboards are a separate line in a painting estimate.",
+  "service_link": "/painting",
+  "related_link": "/blog/cabinet-and-trim-painting-prep-palm-beach-county",
+  "image": "interior-painting-roller-hand.jpg",
+  "image_alt": "Hand with paint roller on an interior wall (representative photo from the Art Lego LLC gallery)",
+  "priority": 201,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "informational",
+  "format": "explainer",
+  "source": "site-gap",
+  "evidence": "painting.html lists trim, ceilings and cabinets as detail work that drives the estimate",
+  "client_fact": "Art Lego prices detail work such as trim, ceilings and cabinets separately from open wall area.",
+  "fact_source": "painting.html: \"Height, access and detail work such as trim, ceilings and cabinets\"",
+  "must_include": [
+   "trim, ceilings and cabinets"
+  ],
+  "outline": [
+   "What counts as trim?",
+   "Why does detail work cost more time than open walls?",
+   "What prep does trim need?",
+   "Why do doors and baseboards need separate coats?",
+   "How does this show up in the estimate?"
+  ],
+  "answer_seed": "Trim means many small surfaces with edges to clean, patch and caulk before painting, so it takes more hands-on time than the same area of open wall.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "storefront-repaint-what-to-tell-your-painter-about-hours-and-access",
+  "title": "Storefront Repaint: What to Tell Your Painter About Hours and Access",
+  "target_query": "storefront repaint hours access commercial painter florida",
+  "angle": "A question roundup for business owners about scheduling a repaint around trading hours; no timelines or prices.",
+  "service_link": "/painting",
+  "related_link": "/blog/commercial-painting-palm-beach-county-what-to-plan",
+  "image": "exterior-house-colorful-row.jpg",
+  "image_alt": "Row of painted building exteriors (representative photo from the Art Lego LLC gallery)",
+  "priority": 211,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "commercial",
+  "format": "faq-roundup",
+  "source": "site-gap",
+  "evidence": "painting.html lists retail spaces, office buildings, industrial facilities and storefronts with professional scheduling",
+  "client_fact": "Art Lego paints retail spaces, office buildings, industrial facilities and storefronts with professional scheduling.",
+  "fact_source": "painting.html: \"Retail spaces, office buildings, industrial facilities, and storefronts with professional scheduling.\"",
+  "must_include": [
+   "storefronts with professional scheduling"
+  ],
+  "outline": [
+   "What hours can the crew work around your customers?",
+   "How will customers get in and out?",
+   "Which surfaces are included: walls, trim, doors?",
+   "Who needs to approve the work?",
+   "What should the scope say about cleanup?"
+  ],
+  "answer_seed": "Tell the painter your opening hours, customer entry routes and who signs off, so the schedule can be built around the business.",
+  "words": [
+   700,
+   950
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "accent-walls-and-murals-planning-a-custom-painting-project",
+  "title": "Accent Walls and Murals: Planning a Custom Painting Project",
+  "target_query": "accent wall mural painting custom project florida",
+  "angle": "Helps homeowners and business owners decide on an accent wall or mural and what to bring to the estimate visit.",
+  "service_link": "/painting",
+  "related_link": "/contact",
+  "image": "interior-luxury-dark-tones.jpg",
+  "image_alt": "Interior with dark accent tones (representative photo from the Art Lego LLC gallery)",
+  "priority": 221,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "commercial",
+  "format": "decision-guide",
+  "source": "site-gap",
+  "evidence": "painting.html lists specialty finishes, accent walls, murals and custom projects; no post covers them",
+  "client_fact": "Art Lego takes on specialty finishes, accent walls, murals and custom projects tailored to the customer vision.",
+  "fact_source": "painting.html: \"Specialty finishes, accent walls, murals, and custom projects tailored to your vision.\"",
+  "must_include": [
+   "accent walls, murals"
+  ],
+  "outline": [
+   "Is an accent wall right for the room?",
+   "What do you bring to the first conversation?",
+   "How does a mural differ from a plain color?",
+   "What happens to prep for specialty finishes?",
+   "How is a custom project quoted?"
+  ],
+  "answer_seed": "Start with the wall, the light and the look you want, then talk through prep, finish and scope at the free walk-through.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "how-to-pick-interior-colors-before-the-estimate-visit",
+  "title": "How to Pick Interior Colors Before the Free Estimate Visit",
+  "target_query": "how to choose interior paint colors before painter visit",
+  "angle": "A practical prep guide for color decisions, built on Art Lego free estimates and color consultation.",
+  "service_link": "/painting",
+  "related_link": "/blog/paint-sheen-choices-florida-walls",
+  "image": "interior-painting-roller-white.jpg",
+  "image_alt": "Roller applying white paint to a wall (representative photo from the Art Lego LLC gallery)",
+  "priority": 231,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "informational",
+  "format": "how-to",
+  "source": "site-gap",
+  "evidence": "Art Lego offers free estimates and color consultation (painting.html)",
+  "client_fact": "Art Lego offers free estimates and color consultation for painting jobs.",
+  "fact_source": "painting.html: \"Free estimates and color consultation\"",
+  "must_include": [
+   "Free estimates and color consultation"
+  ],
+  "outline": [
+   "Where do you start with color?",
+   "How does Florida light change a color?",
+   "What should you gather before the visit?",
+   "How does the color consultation work?",
+   "What finish and sheen questions come up?"
+  ],
+  "answer_seed": "Collect a few photos and samples, look at them in your own light, and bring them to the free estimate and color consultation.",
+  "words": [
+   800,
+   1100
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "what-counts-as-an-interior-remodel",
+  "title": "Flooring, Walls, Ceilings and Layouts: What Counts as an Interior Remodel?",
+  "target_query": "what is an interior remodel flooring walls ceilings layout",
+  "angle": "Defines the scope of an interior remodel in plain words, using the categories on the Art Lego remodeling page.",
+  "service_link": "/remodeling",
+  "related_link": "/blog/interior-remodeling-palm-beach-gardens-fl-open-floor-plans",
+  "image": "interior-modern-minimal.jpg",
+  "image_alt": "Modern minimal interior (representative photo from the Art Lego LLC gallery)",
+  "priority": 241,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "informational",
+  "format": "explainer",
+  "source": "site-gap",
+  "evidence": "remodeling.html lists interior improvements as flooring, walls, ceilings and room layouts",
+  "client_fact": "Art Lego describes interior remodeling as flooring, walls, ceilings and room layouts customized to the lifestyle.",
+  "fact_source": "remodeling.html: \"Interior improvements including flooring, walls, ceilings, and room layouts customized to your lifestyle.\"",
+  "must_include": [
+   "flooring, walls, ceilings, and room layouts"
+  ],
+  "outline": [
+   "What is included in an interior remodel?",
+   "Where does a room update end and a remodel begin?",
+   "Which parts can be done in stages?",
+   "What changes the scope the most?",
+   "How do you start the conversation?"
+  ],
+  "answer_seed": "An interior remodel covers flooring, walls, ceilings and room layouts, and the scope depends on how many of those you change.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "what-an-exterior-remodel-covers-siding-roofing-windows-doors",
+  "title": "Siding, Roofing, Windows and Doors: What an Exterior Remodel Covers",
+  "target_query": "what does exterior remodeling include siding windows doors",
+  "angle": "Explains what falls under exterior remodeling versus repainting; no costs or permit promises.",
+  "service_link": "/remodeling",
+  "related_link": "/blog/exterior-remodeling-cost-factors-palm-beach-county",
+  "image": "hero-twilight-modern-home.jpg",
+  "image_alt": "Modern home exterior at twilight (representative photo from the Art Lego LLC gallery)",
+  "priority": 251,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "informational",
+  "format": "explainer",
+  "source": "site-gap",
+  "evidence": "remodeling.html lists siding, roofing, windows, doors and landscaping upgrades under exterior remodeling",
+  "client_fact": "Art Lego lists siding, roofing, windows, doors and landscaping upgrades as exterior remodeling work.",
+  "fact_source": "remodeling.html: \"siding, roofing, windows, doors, and landscaping upgrades.\"",
+  "must_include": [
+   "siding, roofing, windows, doors"
+  ],
+  "outline": [
+   "What is an exterior remodel?",
+   "Which projects do homeowners combine?",
+   "How does it differ from an exterior repaint?",
+   "Do association rules apply?",
+   "What should the estimate walk-through cover?"
+  ],
+  "answer_seed": "An exterior remodel covers siding, roofing, windows, doors and landscaping upgrades, while a repaint changes only the finish.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "wellington-hoa-remodel-which-projects-need-architectural-review",
+  "title": "Wellington HOA Remodel: Which Projects Need Architectural Review?",
+  "target_query": "wellington hoa architectural review remodel exterior",
+  "angle": "A Wellington-specific guide to which projects usually need association review, from the Wellington area page; the association confirms the actual rules.",
+  "service_link": "/remodeling",
+  "related_link": "/areas/wellington",
+  "image": "aerial-florida-homes-pools.jpg",
+  "image_alt": "Aerial view of Florida homes (representative photo from the Art Lego LLC gallery)",
+  "priority": 261,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "local",
+  "format": "local-guide",
+  "source": "service-city",
+  "evidence": "areas/wellington.html: a large share of Wellington homes sit inside homeowners associations; interior kitchen and bath work usually needs no association sign-off, exterior changes often need review",
+  "client_fact": "Art Lego notes that new paint colors, windows, doors or anything visible from the street often need architectural review in Wellington HOAs.",
+  "fact_source": "areas/wellington.html: \"New paint colors, windows, doors or anything visible from the street often need architectural review first\"",
+  "must_include": [
+   "anything visible from the street"
+  ],
+  "outline": [
+   "Why are so many Wellington homes affected?",
+   "Does a kitchen or bathroom remodel need sign-off?",
+   "Which exterior changes often need review?",
+   "What should you ask your association?",
+   "How does Art Lego plan around approval?"
+  ],
+  "answer_seed": "Interior kitchen and bathroom work usually does not need association sign-off, but exterior changes visible from the street often need architectural review first.",
+  "words": [
+   950,
+   1350
+  ],
+  "city_reason": "The Wellington area page states a large share of Wellington homes sit inside homeowners associations and that exterior changes often need architectural review first.",
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "boynton-beach-shower-signs-it-needs-more-than-new-grout",
+  "title": "Boynton Beach Showers: Signs It Needs More Than New Grout",
+  "target_query": "boynton beach shower leak grout signs remodel",
+  "angle": "A checklist of signs a shower needs more than new grout, tied to the Boynton Beach bathroom notes on the Art Lego area page.",
+  "service_link": "/remodeling",
+  "related_link": "/areas/boynton-beach",
+  "image": "before-shower-waterproofing.jpg",
+  "image_alt": "Shower area before waterproofing work (representative photo from the Art Lego LLC gallery)",
+  "priority": 271,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "local",
+  "format": "checklist",
+  "source": "service-city",
+  "evidence": "areas/boynton-beach.html: humidity, aging grout and dated tubs add up; a leaking shower is not something to put off",
+  "client_fact": "Art Lego notes that humidity, aging grout and dated tubs add up in Boynton Beach bathrooms and a leaking shower is not something to put off.",
+  "fact_source": "areas/boynton-beach.html: \"Humidity, aging grout and dated tubs add up, and a leaking shower is not something to put off.\"",
+  "must_include": [
+   "a leaking shower is not something to put off"
+  ],
+  "outline": [
+   "What does a worn-out shower look like?",
+   "Is it grout, or is it the waterproofing?",
+   "Why does humidity matter in Boynton Beach bathrooms?",
+   "What does a remodeler check when a shower is opened up?",
+   "When should you call for a walk-through?"
+  ],
+  "answer_seed": "Failing grout can be cosmetic, but a leak or repeated moisture damage means the waterproofing behind the tile needs a look.",
+  "words": [
+   700,
+   950
+  ],
+  "city_reason": "The Boynton Beach page says humidity, aging grout and dated tubs add up there and a leaking shower is not something to put off.",
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "what-should-an-exterior-painter-estimate-include-besides-paint",
+  "title": "What Should an Exterior Painter Estimate Include Besides Paint?",
+  "target_query": "exterior painter estimate what is included prep caulking",
+  "angle": "Checklist of what a local exterior painting estimate should spell out, from the steps Art Lego lists for exterior jobs.",
+  "service_link": "/painting",
+  "related_link": "/areas/palm-beach-gardens",
+  "image": "exterior-painting-wall-ladder.jpg",
+  "image_alt": "Exterior wall being painted from a ladder (representative photo from the Art Lego LLC gallery)",
+  "priority": 281,
+  "status": "pending",
+  "category": "Painting",
+  "intent": "commercial",
+  "format": "checklist",
+  "source": "gsc",
+  "evidence": "\"palm beach gardens exterior painters near me\" (4 imp, pos 53.5) and \"palm beach garden residential painters near me\" (7 imp, pos 81.1) on /areas/palm-beach-gardens",
+  "client_fact": "Art Lego lists exterior painting as pressure cleaning, patching, caulking and finish coats built for sun, rain and humidity.",
+  "fact_source": "areas/palm-beach-gardens.html: \"Pressure cleaning, patching, caulking and finish coats built for sun, rain and humidity.\"",
+  "must_include": [
+   "Pressure cleaning, patching, caulking"
+  ],
+  "outline": [
+   "What should an exterior estimate list besides paint?",
+   "Is pressure cleaning included?",
+   "Who patches and caulks before the first coat?",
+   "How many finish coats are described?",
+   "What access and height work is noted?"
+  ],
+  "answer_seed": "A useful exterior estimate lists pressure cleaning, patching, caulking and finish coats, not just paint, so you can compare bids fairly.",
+  "words": [
+   700,
+   950
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
+  "last_error": null
+ },
+ {
+  "slug": "walk-in-shower-or-tub-south-florida-bathroom",
+  "title": "Walk-In Shower or Tub? Deciding for a South Florida Bathroom",
+  "target_query": "walk in shower vs bathtub remodel florida",
+  "angle": "A shower vs tub comparison for South Florida homes, built on the walk-in showers Art Lego lists and its moisture notes.",
+  "service_link": "/remodeling",
+  "related_link": "/blog/bathroom-remodel-trends-palm-beach",
+  "image": "bathroom-glass-shower-1.jpg",
+  "image_alt": "Glass-enclosed shower (representative photo from the Art Lego LLC gallery)",
+  "priority": 291,
+  "status": "pending",
+  "category": "Remodeling",
+  "intent": "commercial",
+  "format": "comparison",
+  "source": "site-gap",
+  "evidence": "areas/west-palm-beach.html lists walk-in showers and frameless glass; no post compares showers and tubs",
+  "client_fact": "Art Lego builds walk-in showers, frameless glass, tile and vanities that handle South Florida moisture.",
+  "fact_source": "areas/west-palm-beach.html: \"Walk-in showers, frameless glass, tile and vanities that handle South Florida moisture.\"",
+  "must_include": [
+   "handle South Florida moisture"
+  ],
+  "outline": [
+   "Is a walk-in shower or a tub right for your household?",
+   "How does South Florida moisture change the choice?",
+   "What does waterproofing mean for each?",
+   "What about frameless glass and cleaning?",
+   "What should you ask at the walk-through?"
+  ],
+  "answer_seed": "Choose by who uses the bathroom: a walk-in shower suits daily use and easy access, a tub suits soaking and young kids, and both need good waterproofing in South Florida humidity.",
+  "words": [
+   950,
+   1350
+  ],
+  "added_at": "2026-11-09T16:36:03.827Z",
+  "attempts": 0,
   "last_error": null
  }
 ]

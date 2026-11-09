@@ -1,20 +1,21 @@
-# _routine — Client Daily Posts (cloud routine)
+# _routine — Client Daily Posts (cloud routine, v2 2026-11-09)
 
-Runs from a Claude Code cloud routine ("Client Daily Posts", claude.ai/code/routines) three times a day.
-Everything the agent needs is in this folder. No brain/Supabase access from the cloud.
+Runs from the Claude Code cloud routine "Client Daily Posts" (trig_013Z4A1CfyZ3YVqhhaoMnYPY), 3 fires a day.
+Each fire writes at most one post per repo; `voice.posts_per_day` caps posts per ET day. No brain access from the cloud.
+Source of the shared files: `Desktop\Summit\Ops\client-daily-posts\kit\` (install with `install-kit.mjs`). SOP: `SOP-client-blog-engine.md`.
 
 Files
-- `voice.json`     business voice card: name, phone, cities, may_state, never_claim, tone, site_url, title_suffix
-- `topics.json`    topic bank. Each: slug, title, target_query, angle, service_link, related_link, image, image_alt, priority, status (pending|published|parked), published_at, live_url, last_error
-- `post-template.html` page template with {{PLACEHOLDERS}}
-- `pick.mjs`       prints the next pending topic (lowest priority number) as JSON, or `{}` if none
-- `gate.mjs`       `node _routine/gate.mjs draft.json`  -> exit 0 PASS / exit 1 with the list of failures (same rules as the n8n quality gate)
-- `render.mjs`     `node _routine/render.mjs draft.json` -> writes blog/<slug>.html, updates blog/index.html, sitemap.xml, llms.txt, marks topic published in topics.json
-- `publish-log.json` appended by render.mjs; synced to the brain from Sir's PC by `Ops/client-daily-posts/sync-brain.mjs`
+- `COPYWRITER.md`  how to write the post (shape, formats, voice, honesty). Same file in every repo.
+- `voice.json`     business card: name, phone, cities, services, may_state, never_claim, tone, site_url, title_suffix, posts_per_day
+- `topics.json`    topic bank: slug, title, target_query, angle, links, image, priority, status (pending|published|parked) and
+                   (v2) intent, format, source, evidence, client_fact, fact_source, must_include, outline, answer_seed, words, city_reason
+- `pick.mjs`       next topic as JSON, or `{}` (stderr says "queue empty" or "daily cap N reached")
+- `gate.mjs`       `node _routine/gate.mjs draft.json` -> PASS or the list of fixes. Client-specific bans live here; shared checks in `quality.mjs`
+- `quality.mjs`    shared checks: answer-first opener, question H2s, client fact, format structure, AI tells, links resolve, FAQ, uniqueness
+                   (this site + other clients), doorway titles. `node _routine/quality.mjs --rendered <slug>` checks the written page's schema.
+- `render.mjs`     writes the post, updates blog index, sitemap, llms.txt, marks the topic published, appends publish-log.json
+- `park.mjs`       `node _routine/park.mjs <slug> "<reason>"` parks a topic that cannot pass
+- `publish-log.json` read by the outage watcher and `Ops/client-daily-posts/sync-brain.mjs`
 
-Agent procedure (one topic per run):
-1. `node _routine/pick.mjs` -> topic. None -> stop, say "queue empty".
-2. Write the post as JSON to `/tmp/draft.json` following `voice.json` + the topic + the rules in `gate.mjs` header.
-3. `node _routine/gate.mjs /tmp/draft.json`. Fail -> fix every listed error, rerun. Two fails -> `node _routine/park.mjs <slug> "<errors>"`, commit, stop.
-4. `node _routine/render.mjs /tmp/draft.json` -> commit all changes to main, push.
-5. Wait ~120s, `curl -sI <live_url>` must be 200. Not 200 -> `node _routine/park.mjs <slug> "live check HTTP <code>"`, commit, push.
+Agent procedure (one topic per fire): pick -> write draft.json per COPYWRITER.md -> gate (max 4 tries, else park)
+-> render -> quality --rendered (fail: revert + park) -> commit + push -> after all repos, curl each live_url (not 200: park).
