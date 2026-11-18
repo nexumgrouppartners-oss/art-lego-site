@@ -851,7 +851,7 @@
   "image": "interior-painting-roller-white.jpg",
   "image_alt": "Roller applying white paint to an interior wall (representative photo from the Art Lego LLC gallery)",
   "priority": 71,
-  "status": "pending",
+  "status": "published",
   "category": "Painting",
   "intent": "informational",
   "format": "how-to",
@@ -875,8 +875,10 @@
    1100
   ],
   "added_at": "2026-11-09T16:36:03.827Z",
-  "attempts": 0,
-  "last_error": null
+  "attempts": 1,
+  "last_error": null,
+  "published_at": "2026-11-18T11:03:32.416Z",
+  "live_url": "https://artlegoremodeling.com/blog/paint-over-mildew-bathroom-florida"
  },
  {
   "slug": "exterior-paint-chalking-peeling-near-the-coast",
