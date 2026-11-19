@@ -41,5 +41,6 @@
   ],
   "site_url": "https://artlegoremodeling.com",
   "title_suffix": " | Art Lego LLC",
-  "posts_per_day": 2
+  "posts_per_day": 0,
+  "paused": "churned; Sir 2026-11-19 cut art lego (set posts_per_day back to 2 and remove paused to resume)"
 }
